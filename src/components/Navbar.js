@@ -11,7 +11,7 @@ const Navbar = () => {
             <p id='tag'>New and Used Books</p>
             </div>
             <div className="menu">
-                <Link className='btn' to='/all'>All Books</Link>
+                <Link className='btn' to='fablefrontend/all'>All Books</Link>
                 <Link className='btn'>Create Account</Link>
             </div>
             

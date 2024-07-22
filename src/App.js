@@ -17,7 +17,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/all' element={<AllBooks />} />
+          <Route path='fablefrontend/all' element={<AllBooks />} />
           <Route path='/Fantasy' element={<Genre />} />
           <Route path='/Mystery' element={<Genre />} />
           <Route path='/Science Fiction' element={<Genre />} />
