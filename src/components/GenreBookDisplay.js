@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const GenreBookDisplay = ({book}) => {
     let address = book._id + ".jpg"
-    const url = "fablefrontend/" + book._id
+    const url = "/" + book._id
     
   return (
     <div id='genre-display'>

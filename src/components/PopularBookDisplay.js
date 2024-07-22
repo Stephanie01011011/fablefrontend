@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const PopularBookDisplay = ({book}) => {
     let address = book._id + ".jpg"
@@ -12,7 +12,7 @@ const PopularBookDisplay = ({book}) => {
       
       <p className="body-text dark">{book.author}</p>
       <p className="card-text">{book.price}</p>
-      <a href={url} className='btn'>View Book</a>
+      <Link to={url} className='btn'>View Book</Link>
     </div>
   )
 }
