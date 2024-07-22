@@ -6,7 +6,7 @@ const BookInfo = () => {
     const {books, dispatch} = useBooksContext()
     let url = window.location.href.split("/")
     let finalurl = url.pop();
-    let address = url + ".jpg"
+    let address = finalurl + ".jpg"
     
   
     useEffect(() => {
