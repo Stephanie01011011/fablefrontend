@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const GenreCards = () => {
     const address = "/"
@@ -11,7 +12,7 @@ const GenreCards = () => {
         <div className='card' key={genre.title}>
             <h2>{genre.title}</h2>
             <p className='body-text dark card-text'>{genre.descr}</p>
-            <a href={address + genre.title} className='btn'>View {genre.title} books</a>
+            <Link to={address + genre.title} className='btn'>View {genre.title} books</Link>
         </div>
       ))}
     </div>
