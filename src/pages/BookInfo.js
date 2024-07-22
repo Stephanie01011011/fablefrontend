@@ -4,7 +4,7 @@ import { useBooksContext } from '../hooks/useBooksContext'
 const BookInfo = () => {
     
     const {books, dispatch} = useBooksContext()
-    let url = window.location.pathname.split("/").slice(1)[0]
+    let url = window.location.pathname.split("/").slice(1)[1]
     let address = url + ".jpg"
     
   
