@@ -7,7 +7,7 @@ const AllBooks = () => {
 
     useEffect(() => {
         const fetchBooks = async () => {
-          const response = await fetch('https://fablebackend.onrender.com/')
+          const response = await fetch('https://fablebackend.onrender.com/api/books')
           const json = await response.json();
           
           
