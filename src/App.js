@@ -22,7 +22,7 @@ function App() {
           <Route path='/Mystery' element={<Genre />} />
           <Route path='/Science Fiction' element={<Genre />} />
           <Route path='/Romance' element={<Genre />} />
-          <Route path='/:id' element={<BookInfo />} />
+          
         </Routes>
         <Footer />
       </BrowserRouter>
