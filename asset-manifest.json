@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fablefrontend/static/css/main.21266a9b.css",
-    "main.js": "/fablefrontend/static/js/main.5e4e14d2.js",
+    "main.js": "/fablefrontend/static/js/main.1ebea167.js",
     "static/media/heroimage.jpg": "/fablefrontend/static/media/heroimage.999be24e27fd17a705d8.jpg",
     "index.html": "/fablefrontend/index.html",
     "main.21266a9b.css.map": "/fablefrontend/static/css/main.21266a9b.css.map",
-    "main.5e4e14d2.js.map": "/fablefrontend/static/js/main.5e4e14d2.js.map"
+    "main.1ebea167.js.map": "/fablefrontend/static/js/main.1ebea167.js.map"
   },
   "entrypoints": [
     "static/css/main.21266a9b.css",
-    "static/js/main.5e4e14d2.js"
+    "static/js/main.1ebea167.js"
   ]
 }
