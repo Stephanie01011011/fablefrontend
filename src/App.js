@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
       <Navbar />
         <Routes>
-          <Route path='/api/books' element={<Home />} />
+          <Route path='*' element={<Home />} />
           <Route path='/all' element={<AllBooks />} />
           <Route path='/Fantasy' element={<Genre />} />
           <Route path='/Mystery' element={<Genre />} />
