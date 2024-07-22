@@ -11,7 +11,7 @@ const BookInfo = () => {
   
     useEffect(() => {
       const fetchBooks = async () => {
-        const response = await fetch('https://fablebackend.onrender.com/api/books' + finalurl)
+        const response = await fetch('https://fablebackend.onrender.com/api/books/' + finalurl)
         const json = await response.json();
         const book = json.filter((b) => b._id == finalurl)
         
