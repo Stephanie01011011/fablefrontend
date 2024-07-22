@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Genre from './pages/Genre';
 import Navbar from './components/Navbar';
@@ -13,11 +13,11 @@ function App() {
   //may need to change initial route to * later on in deployment
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='fablefrontend/all' element={<AllBooks />} />
+          <Route path='/all' element={<AllBooks />} />
           <Route path='/Fantasy' element={<Genre />} />
           <Route path='/Mystery' element={<Genre />} />
           <Route path='/Science Fiction' element={<Genre />} />
@@ -25,7 +25,7 @@ function App() {
           
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
      
     </div>
   );

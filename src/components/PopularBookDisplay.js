@@ -1,9 +1,9 @@
 
 
 const PopularBookDisplay = ({book}) => {
-    let address = book._id + ".jpg"
+    let address = "../public/" + book._id + ".jpg"
     
-    const url = "../public/" + book._id
+    const url = "/" + book._id
  
   return (
     <div id="book-display">
