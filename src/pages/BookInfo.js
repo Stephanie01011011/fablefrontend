@@ -4,15 +4,16 @@ import { useBooksContext } from '../hooks/useBooksContext'
 const BookInfo = () => {
     
     const {books, dispatch} = useBooksContext()
-    let url = window.location.pathname.split("/").slice(1)[1]
+    let url = window.location.href.split("/")
+    let finalurl = url.pop();
     let address = url + ".jpg"
     
   
     useEffect(() => {
       const fetchBooks = async () => {
-        const response = await fetch('https://fablebackend.onrender.com/api/books' + url)
+        const response = await fetch('https://fablebackend.onrender.com/api/books' + finalurl)
         const json = await response.json();
-        const book = json.filter((b) => b._id == url)
+        const book = json.filter((b) => b._id == finalurl)
         
   
         if (response.ok) {
