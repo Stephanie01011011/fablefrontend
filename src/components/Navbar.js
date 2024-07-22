@@ -7,7 +7,7 @@ const Navbar = () => {
       <header>
         <div className="nav-container">
             <div className="logo">
-            <Link to='/'><h1 id='logo'>Fable Books</h1></Link>
+            <Link to='fablefrontend/'><h1 id='logo'>Fable Books</h1></Link>
             <p id='tag'>New and Used Books</p>
             </div>
             <div className="menu">

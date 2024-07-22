@@ -2,7 +2,7 @@ import React from 'react'
 
 const GenreBookDisplay = ({book}) => {
     let address = book._id + ".jpg"
-    const url = "/" + book._id
+    const url = "fablefrontend/" + book._id
     
   return (
     <div id='genre-display'>
