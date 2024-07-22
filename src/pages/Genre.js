@@ -4,10 +4,11 @@ import GenreBookDisplay from '../components/GenreBookDisplay'
 import { booksReducer } from '../context/booksContext'
 
 const Genre = () => {
-  let url = window.location.pathname.split("/").slice(2)
+  let url = window.location.pathname.split("/")
+  let finalurl = url.pop();
   console.log(url)
-  if(url == "Science%20Fiction"){
-    url = ["Science Fiction"]
+  if(finalurl == "Science%20Fiction"){
+    finalurl = ["Science Fiction"]
   }
   
   const {books, dispatch} = useBooksContext()
@@ -17,7 +18,7 @@ const Genre = () => {
     const fetchBooks = async () => {
       const response = await fetch('https://fablebackend.onrender.com/api/books')
       const json = await response.json();
-      const genre = json.filter((book) => book.genre == url[0])
+      const genre = json.filter((book) => book.genre == finalurl)
 
       if (response.ok) {
         dispatch({type: 'SET_BOOKS',
@@ -45,7 +46,7 @@ console.log(books)
     
     <div className="popular-books">
       
-    <h2 className='large-text dark center'>{url}</h2>
+    <h2 className='large-text dark center'>{finalurl}</h2>
     <div className="pop-book-display">
         {books && books.map((book) => (
             <GenreBookDisplay book={book}/>
