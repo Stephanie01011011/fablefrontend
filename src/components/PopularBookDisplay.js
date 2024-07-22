@@ -1,7 +1,7 @@
 
 
 const PopularBookDisplay = ({book}) => {
-    let address = "../public/" + book._id + ".jpg"
+    let address = book._id + ".jpg"
     
     const url = "/" + book._id
  
