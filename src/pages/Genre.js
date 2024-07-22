@@ -5,6 +5,7 @@ import { booksReducer } from '../context/booksContext'
 
 const Genre = () => {
   let url = window.location.pathname.split("/").slice(2)
+  console.log(url)
   if(url == "Science%20Fiction"){
     url = ["Science Fiction"]
   }
