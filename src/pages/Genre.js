@@ -4,11 +4,10 @@ import GenreBookDisplay from '../components/GenreBookDisplay'
 import { booksReducer } from '../context/booksContext'
 
 const Genre = () => {
-  console.log(window.location.href);
+  
   let url = window.location.href.split("/")
   let finalurl = url.pop();
-  console.log(url)
-  console.log(finalurl)
+  
   if(finalurl == "Science%20Fiction"){
     finalurl = ["Science Fiction"]
   }
@@ -42,7 +41,7 @@ const Genre = () => {
   }, [])
 
 
-console.log(books)
+
       
   return (
     

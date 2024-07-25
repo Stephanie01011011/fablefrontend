@@ -13,7 +13,7 @@ const BookInfo = () => {
       const fetchBooks = async () => {
         const response = await fetch('https://fablebackend.onrender.com/api/books/' + finalurl)
         const json = await response.json();
-        //const book = json.filter((b) => b._id == finalurl)
+       
         
   
         if (response.ok) {
@@ -30,7 +30,7 @@ const BookInfo = () => {
     }, [])
     
      
-//let address = books[0]._id + ".jpg"
+
 
   return (
     <div>
