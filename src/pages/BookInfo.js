@@ -13,12 +13,12 @@ const BookInfo = () => {
       const fetchBooks = async () => {
         const response = await fetch('https://fablebackend.onrender.com/api/books/' + finalurl)
         const json = await response.json();
-        const book = json.filter((b) => b._id == finalurl)
+        //const book = json.filter((b) => b._id == finalurl)
         
   
         if (response.ok) {
           dispatch({type: 'SET_BOOKS',
-              payload: book})
+              payload: json})
               
 
           }
