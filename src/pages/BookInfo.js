@@ -37,14 +37,14 @@ const BookInfo = () => {
         {books && 
         <div className="info-container">
             <div className="text">
-            <h2 className='large-text dark'>{books[0].title}</h2>
-            <p className='medium-text dark'>{books[0].author}</p>
-            <p className='body-text dark'>{books[0].description}</p>
+            <h2 className='large-text dark'>{books.title}</h2>
+            <p className='medium-text dark'>{books.author}</p>
+            <p className='body-text dark'>{books.description}</p>
             <div className="info-text-container">
-            <p className='medium-text'><span style={{fontSize: '16px'}}>publisher: </span> {books[0].publisher}</p>
-            <p>{books[0].pages} pages</p>
+            <p className='medium-text'><span style={{fontSize: '16px'}}>publisher: </span> {books.publisher}</p>
+            <p>{books.pages} pages</p>
             </div>
-            <p className='large-text dark'>{books[0].price}</p>
+            <p className='large-text dark'>{books.price}</p>
             
             </div>
             <div className="image">
